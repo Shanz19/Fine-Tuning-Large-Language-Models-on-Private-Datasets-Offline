@@ -99,6 +99,9 @@ Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1
 1. **Performance Comparison:** Mixtral 7X8B consistently outperformed Llama 2 13B across all benchmark tests.
 2. **Efficiency:** The sliding window attention mechanism of Mixtral 7X8B ensured efficient resource utilization.
 
+![RESULTS](https://github.com/Shanz19/Fine-Tuning-Large-Language-Models-on-Private-Datasets-Offline/assets/117365514/59fcd6eb-75a8-4ec0-84ec-8061b8554352)
+
+
 ## Chatbot Features
 
 - Supports any open-source LLM from Hugging Face.
@@ -109,6 +112,9 @@ Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1
 - 4-bit quantization options.
 - Automatic expansion of context from multiple conversations.
 - Uses organizational private data to generate detailed output.
+
+<img width="574" alt="Screenshot 2024-06-13 at 8 15 42 PM" src="https://github.com/Shanz19/Fine-Tuning-Large-Language-Models-on-Private-Datasets-Offline/assets/117365514/dda9ecef-6a26-425d-b13f-81e0a89bfe33">
+
 
 ## Conclusion
 
