@@ -31,6 +31,15 @@ QLoRA extends LoRA by quantizing weight parameters in the pre-trained LLM to 4-b
 ## Data Preparation
 
 To fine-tune a model, structured data in a question-and-answer format is required. This involves creating input/output pairs, prompt engineering, data pre-processing, and data filtering. The dataset is then converted into a JSONL format using the Llama-3-70B-Instruct gguf model.
+**{
+"input": "Who are you?", “output": "I am a Finetuned Chatbot.", 
+}**
+- In addition to creating input/output pairs, several other things have to be taken care of: 
+Prompt engineering (e.,g., injection of <human>: and <bot>: into the text to indicate 
+input/outputs). 
+- Data pre-processing (e.g., removing incomplete sentences, too long dialogues). 
+- Data filtering (e.g., removing profanity or undesired responses that are too short or 
+low quality). 
 
 ## Foundation LLM Model
 
