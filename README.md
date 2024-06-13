@@ -37,6 +37,7 @@ To fine-tune a model, structured data in a question-and-answer format is require
 ## Mistral-8x7B
 
 Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1 34B in many. It employs Grouped-query attention (GQA) for faster inference and Sliding Window Attention (SWA) for handling longer sequences with reduced computational costs. Mistral 7B is designed for effortless fine-tuning and shines in various tasks, making it an ideal choice for a wide range of NLP applications.
+![230927_bars](https://github.com/Shanz19/Fine-Tuning-Large-Language-Models-on-Private-Datasets-Offline/assets/117365514/b05e9776-6f78-41b4-8709-58664de9e972)
 
 ## Offline Implementation
 
