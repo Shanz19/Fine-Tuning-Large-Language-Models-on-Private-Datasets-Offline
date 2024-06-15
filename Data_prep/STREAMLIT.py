@@ -140,7 +140,3 @@ if st.session_state['generated']:
                 is_user=True, key=str(i) + '_user')
 
 
-# # # Add credit
-# # st.markdown("""
-# # ---
-# # Made with 🤖 by [Austin Johnson](https://github.com/AustonianAI)""")
