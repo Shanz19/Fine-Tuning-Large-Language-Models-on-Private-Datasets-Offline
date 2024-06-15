@@ -2,7 +2,7 @@
 
 ## Overview
 
-This report delves into the intricate process of fine-tuning large language models for specialized tasks on private datasets, with a focus on data privacy and security. The study involves transforming unstructured datasets into a question-and-answer JSONL format using the Llama-3-70B-Instruct gguf model. Methodologies such as transfer learning and domain adaptation are explored to optimize model efficacy while safeguarding sensitive data. Experimentation with multiple models reveals the superiority of the Mistral 7X8B model. Insights into both online and offline model development scenarios are provided, offering a comprehensive framework for leveraging large language models for tasks involving sensitive datasets, particularly in defense contexts.
+This project delves into the intricate process of fine-tuning large language models for specialized tasks on private datasets, with a focus on data privacy and security. The study involves transforming unstructured datasets into a question-and-answer JSONL format using the Llama-3-70B-Instruct gguf model. Experimentation with multiple models reveals the superiority of the Mistral 7X8B model. Insights into both online and offline model development scenarios are provided, offering a comprehensive framework for leveraging large language models for tasks involving sensitive datasets, particularly in defense contexts.
 
 ## Introduction of the Industry
 
@@ -45,7 +45,7 @@ low quality).
 
 ## Mistral-8x7B
 
-Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1 34B in many. It employs Grouped-query attention (GQA) for faster inference and Sliding Window Attention (SWA) for handling longer sequences with reduced computational costs. Mistral 7B is designed for effortless fine-tuning and shines in various tasks, making it an ideal choice for a wide range of NLP applications.
+Mistral 7B performs impressively with consistent output and minimal hallucinations, and its humor surpasses Llama2 7B. Llama2 70B hallucinates more frequently than desired. Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1 34B in many. It employs Grouped-query attention (GQA) for faster inference and Sliding Window Attention (SWA) for handling longer sequences with reduced computational costs. Mistral 7B is designed for effortless fine-tuning and shines in various tasks, making it an ideal choice for a wide range of NLP applications.
 ![230927_bars](https://github.com/Shanz19/Fine-Tuning-Large-Language-Models-on-Private-Datasets-Offline/assets/117365514/b05e9776-6f78-41b4-8709-58664de9e972)
 
 ## Offline Implementation
@@ -56,7 +56,7 @@ Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1
 
 **Environment Setup:** Set up a high-performance computing environment with sufficient resources.
 
-**Model Selection:** Choose LLAMA2-7B or GPT-2 Large as the base architecture for fine-tuning.
+**Model Selection:** Choose Mistral7x8B, LLAMA2-7B or GPT-2 Large as the base architecture for fine-tuning.
 
 **Offline Fine-Tuning:** Initialize the model with pre-trained weights and fine-tune on your custom dataset using frameworks like TensorFlow or PyTorch.
 
@@ -81,7 +81,6 @@ Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1
 
 - **Development Environment:** Visual Studio Code (VS Code) with support for Python development.
 - **Python Libraries:** TensorFlow, PyTorch, Hugging Face Transformers, and additional required packages.
-- **Model Checkpoints:** Access to LLAMA2-7B model checkpoints.
 
 ## Software Description
 
@@ -98,15 +97,15 @@ Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1
 
 ## Experiment Setup
 
-- **Models Used:** Mixtral 7X8B
+- **Models Used:** Mistral 7X8B
 - **Tokenizer:** Autotokenizer
 - **Dataset Format:** JSONL
-- **Hardware:** NVIDIA GPUs (A100, A6000, H100)
+- **Hardware:** NVIDIA GPU (24GB of VRAM)
 - **Software:** Python 3.x, TensorFlow, PyTorch, Hugging Face Transformers
 
 ## Results
 
-1. **Performance Comparison:** Mixtral 7X8B consistently outperformed Llama 2 13B across all benchmark tests.
+1. **Performance Comparison:** Mistral 7X8B consistently outperformed Llama 2 13B across all benchmark tests.
 2. **Efficiency:** The sliding window attention mechanism of Mixtral 7X8B ensured efficient resource utilization.
 
 ![RESULTS](https://github.com/Shanz19/Fine-Tuning-Large-Language-Models-on-Private-Datasets-Offline/assets/117365514/59fcd6eb-75a8-4ec0-84ec-8061b8554352)
@@ -129,5 +128,5 @@ Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1
 
 ## Conclusion
 
-The fine-tuning of large language models such as Mixtral 7X8B, LLAMA2-7B, and GPT-2 Large offers a powerful approach to address diverse NLP tasks. By adapting pre-trained models to specific domains or applications, fine-tuning enables LLMs to achieve higher performance and better suit the needs of various industries and use cases. This report provides a comprehensive framework for fine-tuning LLMs, encompassing data preparation, model selection, training strategies, and privacy concerns. The advantages, limitations, and applications of fine-tuned LLMs are highlighted, offering valuable insights for practitioners aiming to leverage large language models for tasks involving sensitive datasets.
+The fine-tuning of large language models such as Mistral 7X8B, LLAMA2-7B, and GPT-2 offers a powerful approach to address diverse NLP tasks. By adapting pre-trained models to specific domains or applications, fine-tuning enables LLMs to achieve higher performance and better suit the needs of various industries and use cases. This report provides a comprehensive framework for fine-tuning LLMs, encompassing data preparation, model selection, training strategies, and privacy concerns. The advantages, limitations, and applications of fine-tuned LLMs are highlighted, offering valuable insights for practitioners aiming to leverage large language models for tasks involving sensitive datasets.
 
