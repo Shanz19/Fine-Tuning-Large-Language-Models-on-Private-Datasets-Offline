@@ -123,7 +123,8 @@ Mistral 7B outperforms Llama 2 13B across all benchmark tests and rivals Llama 1
 - Automatic expansion of context from multiple conversations.
 - Uses organizational private data to generate detailed output.
 
-<img width="574" alt="Screenshot 2024-06-13 at 8 15 42 PM" src="https://github.com/Shanz19/Fine-Tuning-Large-Language-Models-on-Private-Datasets-Offline/assets/117365514/dda9ecef-6a26-425d-b13f-81e0a89bfe33">
+<img width="553" alt="Screenshot 2024-06-13 at 8 15 42 PM" src="https://github.com/Shanz19/Fine-Tuning-Large-Language-Models-on-Private-Datasets-Offline/assets/117365514/baaaa71c-1eaf-4ad9-88a4-8244bea21ded">
+
 
 
 ## Conclusion
